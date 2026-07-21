@@ -23,7 +23,7 @@ async def bacbo(update: Update, context: ContextTypes.DEFAULT_TYPE):
         return
     
     # Pega a cor/aposta informada
-    aposta = " ".join(args).capitalize()
+    aposta = " ".join(args).title()
     
     mensagem = (
         "🎲 *NOVO SINAL - BAC BO* 🎲\n\n"
