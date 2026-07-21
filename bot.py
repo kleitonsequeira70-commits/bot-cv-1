@@ -35,7 +35,7 @@ async def bacbo(update: Update, context: ContextTypes.DEFAULT_TYPE):
     
     await update.message.reply_text(mensagem, parse_mode="Markdown")
 
-if _name_ == "_main_":
+if _ _name_ _ == "_main_":
     app = ApplicationBuilder().token(TOKEN).build()
     
     # Adiciona o comando /bacbo
