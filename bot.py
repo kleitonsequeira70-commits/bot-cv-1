@@ -3,14 +3,14 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, ContextTypes, CommandHandler
 
 # O token gerado pelo BotFather (vip_capeverd_bot)
-TOKEN = "8834388263:AAE4ne1XZdW7ANAKgoTo7m4bE5nu9R6FjTk"
+TOKEN = os.getenv("8834388263:AAE4ne1XZW7ANAKGoTo7m4bE5nu9R6fjTk⁠")
+
+"""
+Comando para enviar o sinal do Bac Bo:
+Exemplo: /bacbo Vermelho ou /bacbo Azul ou /bacbo Empate
+"""
 
 async def bacbo(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    """
-    Comando para enviar o sinal do Bac Bo:
-    Exemplo: /bacbo Vermelho ou /bacbo Azul ou /bacbo Empate
-    """
-    args = context.args
     if not args:
         await update.message.reply_text(
             "⚠️ **Uso incorreto!**\n"
